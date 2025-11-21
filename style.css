@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: 'Share Tech Mono', monospace;
+    background: #0b0022;
+    color: #eee;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    background: linear-gradient(90deg, #3b0088, #6f00ff);
+    box-shadow: 0 0 20px #6f00ff;
+}
+header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 0 0 10px #ff00ff, 0 0 30px #bf00ff;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 8px #ff00ff, 0 0 18px #bf00ff;
+}
+.container {
+    padding: 60px 50px;
+}
+.tabs {
+    display: flex;
+    margin-bottom: 50px;
+}
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 15px 0;
+    margin-right: 12px;
+    border-radius: 10px;
+    background: #1b0033;
+    color: #aaa;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    border: 1px solid #7f00ff;
+}
+.tab.active {
+    background: linear-gradient(45deg, #7f00ff, #ff00ff, #bf00ff);
+    color: #000;
+    box-shadow: 0 0 25px #ff00ff, 0 0 45px #bf00ff;
+}
+.tab:hover {
+    box-shadow: 0 0 15px #ff00ff, 0 0 30px #bf00ff;
+}
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+.tab-content.active {
+    display: block;
+}
+.client-card {
+    background: linear-gradient(135deg, #2b003c, #4e0077);
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #7f00ff, 0 0 40px #ff00ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.client-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 30px #ff00ff, 0 0 60px #bf00ff;
+}
+.client-card h3 {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+.btn {
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ff00ff, #7f00ff, #bf00ff);
+    color: #fff;
+    box-shadow: 0 0 15px #ff00ff, 0 0 30px #bf00ff;
+    transition: all 0.3s;
+}
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 35px #ff00ff, 0 0 70px #bf00ff, 0 0 100px #ff00ff;
+}
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+footer {
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(90deg, #3b0088, #6f00ff);
+    color: #ddd;
+    box-shadow: 0 0 20px #6f00ff;
+}

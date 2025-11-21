@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AnabielCheats</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>AnabielCheats</h1>
+    <nav>
+        <a href="#">Главная</a>
+        <a href="#">Клиенты</a>
+        <a href="https://t.me/semiragemodule" target="_blank">Telegram @semiragemodule</a>
+    </nav>
+</header>
+
+<main class="container">
+    <div class="tabs">
+        <div class="tab active" data-tab="cs2">CS2</div>
+        <div class="tab" data-tab="minecraft">Minecraft</div>
+    </div>
+
+    <div class="tab-content active" id="cs2">
+        <div class="client-card">
+            <h3>Exloader</h3>
+            <button class="btn" onclick="window.open('https://workupload.com/file/quHygL6aSJ6', '_blank')">Скачать</button>
+        </div>
+    </div>
+
+    <div class="tab-content" id="minecraft">
+        <div class="client-card">
+            <h3>РП Брои</h3>
+            <button class="btn" onclick="window.open('https://workupload.com/file/XgtmLypctam', '_blank')">Скачать</button>
+        </div>
+        <div class="client-card">
+            <h3>РП Рикера</h3>
+            <button class="btn" onclick="window.open('https://workupload.com/file/utM7FQ4XPxf', '_blank')">Скачать</button>
+        </div>
+        <div class="client-card">
+            <h3>РП Whitew1n</h3>
+            <button class="btn" onclick="window.open('https://workupload.com/file/NYQVwPbyKVg', '_blank')">Скачать</button>
+        </div>
+        <div class="client-card">
+            <h3>Waillent</h3>
+            <button class="btn" onclick="window.open('https://workupload.com/file/cZ84NP9fYQq', '_blank')">Скачать</button>
+        </div>
+        <div class="client-card">
+            <h3>NewCode</h3>
+            <button class="btn" onclick="window.open('https://workupload.com/file/fzeBgLPGkTw', '_blank')">Скачать</button>
+        </div>
+    </div>
+</main>
+
+<footer>
+    &copy; 2025 AnabielCheats
+</footer>
+
+<script>
+const tabs = document.querySelectorAll('.tab');
+const contents = document.querySelectorAll('.tab-content');
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const target = tab.dataset.tab;
+        contents.forEach(c => {
+            c.classList.remove('active');
+            if(c.id === target) c.classList.add('active');
+        });
+    });
+});
+</script>
+</body>
+</html>
